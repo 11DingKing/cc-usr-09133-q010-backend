@@ -1,3 +1,8 @@
 [project]
-name="backend-service"
-version="0.1.0"
+name = "domain-backend"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["Django>=5.1", "psycopg[binary]>=3.2", "celery>=5.4"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "service.settings"
